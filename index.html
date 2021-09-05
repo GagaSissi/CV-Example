@@ -15,10 +15,10 @@
       <h1>Cecilia Strüber</h1>
       <p class="profession">Prospective Web Developer</p>
       <nav>
-        <a href="#Profil">Profil</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Contact">Contact</a>
+        <a class="nav-link" href="#Profil">Profil</a>
+        <a class="nav-link" href="#Experience">Experience</a>
+        <a class="nav-link" href="#Skills">Skills</a>
+        <a class="nav-link" href="#Contact">Contact</a>
       </nav>
     </header>
     <main>
@@ -81,16 +81,18 @@
         <h2>Contact</h2>
         <ol>
           <li>
-            E-Mail:
-            <a href="mailto:strueber.cecilia@googlemail.com"
-              >strueber.cecilia@googlemail.com</a
+            <button
+              onclick="window.location.href='mailto:strueber.cecilia@googlemail.com';"
             >
+              E-Mail
+            </button>
           </li>
           <li>
-            Insta:
-            <a href="https://www.instagram.com/cecilia_strueber/"
-              >https://www.instagram.com/cecilia_strueber</a
+            <button
+              onclick="window.location.href='https://www.instagram.com/cecilia_strueber/';"
             >
+              Instagram
+            </button>
           </li>
         </ol>
       </article>
