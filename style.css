@@ -1,13 +1,21 @@
 /* General Settings */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 1rem;
+}
+
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -17,8 +25,8 @@ h3 {
 }
 
 body {
-  margin: 0%;
-  background-color: rgb(248, 232, 211);
+  margin: 0;
+  background-color: lightyellow;
 }
 ::selection {
   color: salmon;
@@ -32,12 +40,26 @@ body {
 }
 
 .header {
-  padding: 50px 20px;
+  padding: 3.125rem 1.25rem;
+  padding-top: 4rem;
   text-align: center;
   background-color: darksalmon;
+  position: relative;
 }
+
+.header-group {
+  font-size: 3.5rem;
+}
+.main-header {
+  font-size: 1em;
+}
+
+.profession {
+  font-size: 0.25em;
+}
+
 .nav-link {
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   color: darkred;
 }
 
@@ -48,17 +70,17 @@ body {
 
 .nav-link:active {
   color: azure;
-  background-color: salmon;
+  background-color: lightyellow;
 }
 .nav-link + .nav-link {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .main {
-  max-width: 800 px;
+  max-width: 65ch;
   margin: 0 auto;
   padding: auto;
-  background-color: lightsalmon;
+  background-color: lightyellow;
 }
 
 /* Kasten*/
@@ -66,10 +88,10 @@ body {
 .button {
   background-color: #5b4caf; /* Blue */
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: lightsalmon;
+  padding: 0.938rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
