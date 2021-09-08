@@ -33,6 +33,10 @@ body {
   background: blue;
 }
 
+footer {
+  padding: 10px 20px;
+  background-image: linear-gradient(90deg, salmon, black);
+}
 /*Styling*/
 
 .profession::after {
@@ -43,7 +47,7 @@ body {
   padding: 3.125rem 1.25rem;
   padding-top: 4rem;
   text-align: center;
-  background-color: darksalmon;
+  background-image: linear-gradient(240deg, lightsalmon, rgb(117, 52, 52));
   position: relative;
 }
 
@@ -70,7 +74,7 @@ body {
 
 .nav-link:active {
   color: azure;
-  background-color: lightyellow;
+  _background-color: lightyellow;
 }
 .nav-link + .nav-link {
   margin-left: 1.25rem;
@@ -80,7 +84,16 @@ body {
   max-width: 65ch;
   margin: 0 auto;
   padding: auto;
-  background-color: lightyellow;
+}
+
+.hire-me {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background: lightskyblue;
+  color: black;
 }
 
 /* Kasten*/
@@ -94,4 +107,31 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 1.25rem;
+}
+
+/* Breakpoints*/
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media screen and (min-width: 576px) {
+  .hire-me {
+    font-size: 16px;
+    position: fixed;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media screen and (min-width: 768px) {
+  .main > * + * {
+    font-size: 20px;
+  }
+}
+
+/* Drucker*/
+
+@media print {
+  .hire-me {
+    display: none;
+  }
 }
