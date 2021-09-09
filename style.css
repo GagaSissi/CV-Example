@@ -184,7 +184,7 @@ button:hover span:after {
   }
 }
 
-@media screen and (min-width: 768px) ) {
+@media screen and (min-width: 768px) {
   .nav-link + .nav-link {
     margin-left: 1re;
   }
