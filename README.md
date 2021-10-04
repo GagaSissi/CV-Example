@@ -1,4 +1,4 @@
-### Lebenlauf
+# Lebenlauf
 
 ## Erstellen eines Online Lebenlauf anhand Issues des Coding Bootcamp Europe:
 
