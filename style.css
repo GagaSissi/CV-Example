@@ -112,13 +112,14 @@ footer {
 }
 
 .hire-me {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+  position: fixed;
+  right: 3rem;
+  top: 2rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
   background: lightskyblue;
   color: black;
+  transition: transform 0.2s ease-in-out;
 }
 
 /* Kasten*/
@@ -163,6 +164,11 @@ button:hover span:after {
   opacity: 1;
   right: 0;
 }
+.header:hover .hire-me {
+  background-color: aqua;
+  transform: scale(2);
+}
+
 /* Breakpoints*/
 
 @media screen and (min-width: 992px) {
