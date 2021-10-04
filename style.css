@@ -83,8 +83,12 @@ footer {
 }
 
 .nav-link:active {
-  color: azure;
+  color: black;
   background-color: lightyellow;
+}
+
+.nav-link:focus {
+  outline-style: groove;
 }
 
 .main {
