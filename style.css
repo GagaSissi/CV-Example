@@ -23,18 +23,38 @@ h6 {
 
 body {
   margin: 0;
-  background-color: lightyellow;
+  --background-color: cornsilk;
+  --background-color-hover: grey;
+  --background-color-hire-me: aqua;
+  --background-color-button: darksalmon;
+  --gradient-color: rosybrown;
+  --soft-image-color: lightsalmon;
+  --nav-link-color: darkred;
+  --text-color: black;
+  --hire-me-background: lightskyblue;
+  --essential-color: salmon;
+  --poppy-background: blue;
+
+  --text-color-button: white;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 ::selection {
-  color: salmon;
-  background: blue;
+  color: var(--essential-color);
+
+  background-color: var(--poppy-background);
 }
 
 footer {
   padding: 0.7rem 0;
   padding-bottom: 4rem;
-  text-align: left;
-  background-image: linear-gradient(90deg, salmon, black);
+  text-align: center;
+  background-image: linear-gradient(
+    90deg,
+    var(--essential-color),
+    var(--gradient-color)
+  );
   position: relative;
 }
 /*Styling*/
@@ -47,7 +67,11 @@ footer {
   padding: 3.125rem 1.25rem;
   padding-top: 4rem;
   text-align: center;
-  background-image: linear-gradient(240deg, lightsalmon, rgb(117, 52, 52));
+  background-image: linear-gradient(
+    240deg,
+    var(--soft-image-color),
+    var(--gradient-color)
+  );
   position: relative;
 }
 
@@ -74,17 +98,15 @@ footer {
 
 .nav-link {
   padding: 0.25rem 0.5rem;
-  color: darkred;
+  color: var(--nav-link-color);
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: grey;
+  background-color: var(--background-color-hover);
 }
 
 .nav-link:active {
-  color: black;
-  background-color: lightyellow;
+  background-color: var(--background-color);
 }
 
 .nav-link:focus {
@@ -121,17 +143,16 @@ footer {
   top: 2rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background: lightskyblue;
-  color: black;
+  background: var(--hire-me-background);
   transition: transform 0.2s ease-in-out;
 }
 
 /* Kasten*/
 
 button {
-  background-color: lightyellow;
+  background-color: var(--background-color);
   border: none;
-  color: salmon;
+  color: var(--essential-color);
   padding: 0.7rem 1.3rem;
   text-align: center;
   text-decoration: none;
@@ -156,8 +177,8 @@ button span:after {
 }
 
 button:hover {
-  background-color: darksalmon;
-  color: white;
+  background-color: var(--background-color-button);
+  color: var(--text-color-button);
 }
 
 button:hover span {
@@ -169,7 +190,7 @@ button:hover span:after {
   right: 0;
 }
 .header:hover .hire-me {
-  background-color: aqua;
+  background-color: var(--background-color-hire-me);
   transform: scale(2);
 }
 
